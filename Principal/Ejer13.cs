@@ -20,7 +20,8 @@ namespace FinalCSharp.Ejercicio13{
                 else 
                     WriteLine("Al menos una de las palabras introducidas es nula");
             }
-            
+            palabra1 = System.Text.RegularExpressions.Regex.Replace(palabra1.Normalize(System.Text.NormalizationForm.FormD), @"[^a-zA-z0-9 ]+", "");
+            palabra2 = System.Text.RegularExpressions.Regex.Replace(palabra2.Normalize(System.Text.NormalizationForm.FormD), @"[^a-zA-z0-9 ]+", "");
             palabra1 = palabra1.ToLower().Replace(" ", "");
             palabra2 = palabra2.ToLower().Replace(" ", "");
             char[] letras1 = palabra1.ToCharArray();

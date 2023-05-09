@@ -21,7 +21,6 @@ namespace FinalCSharp.Ejercicio3{
                     {
                         WriteLine(anio + " no es un año bisiesto");
                     }
-                    ReadLine();
                     break;
                 }
                 else
